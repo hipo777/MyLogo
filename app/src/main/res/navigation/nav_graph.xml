@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentInicio">
+
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="org.demre.mylogo.FragmentInicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_fragmentInicio_to_fragmentPregunta"
+            app:destination="@id/fragmentPregunta" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPregunta"
+        android:name="org.demre.mylogo.FragmentPregunta"
+        android:label="fragment_pregunta"
+        tools:layout="@layout/fragment_pregunta" >
+        <action
+            android:id="@+id/action_fragmentPregunta_to_fragmentCorrecta"
+            app:destination="@id/fragmentCorrecta" />
+        <action
+            android:id="@+id/action_fragmentPregunta_to_fragmentIncorrecta"
+            app:destination="@id/fragmentIncorrecta" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCorrecta"
+        android:name="org.demre.mylogo.FragmentCorrecta"
+        android:label="fragment_correcta"
+        tools:layout="@layout/fragment_correcta" />
+    <fragment
+        android:id="@+id/fragmentIncorrecta"
+        android:name="org.demre.mylogo.FragmentIncorrecta"
+        android:label="fragment_incorrecta"
+        tools:layout="@layout/fragment_incorrecta" />
+</navigation>

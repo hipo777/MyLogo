@@ -15,8 +15,8 @@ public class FragmentInicio extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        FragmentInicioBinding binding = FragmentInicioBinding.inflate(inflater, container, false);
+
+        FragmentInicioBinding binding = FragmentInicioBinding.inflate(getLayoutInflater());
         return binding.getRoot();
 
     }
