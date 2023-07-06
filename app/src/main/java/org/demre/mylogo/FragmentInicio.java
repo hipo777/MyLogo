@@ -32,8 +32,8 @@ public class FragmentInicio extends Fragment {
                 Snackbar.make(v, "Debe ingresar un nombre", Snackbar.LENGTH_LONG).show();
             }else {
                 Bundle envoltorio = new Bundle();
-            envoltorio.putString("key", datoIngresado);
-            Navigation.findNavController(v).navigate(R.id.action_fragmentInicio_to_fragmentPregunta, envoltorio);
+                envoltorio.putString("key", datoIngresado);
+                Navigation.findNavController(v).navigate(R.id.action_fragmentInicio_to_fragmentPregunta, envoltorio);
             }
 
         });

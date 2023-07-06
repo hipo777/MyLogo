@@ -61,25 +61,25 @@
             android:checkedButton="@+id/radio_button_1">
 
             <RadioButton
-                android:id="@+id/radioLays"
+                android:id="@+id/radioLeo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Leonardo da Vinci" />
 
             <RadioButton
-                android:id="@+id/radioPringles"
+                android:id="@+id/radioMadre"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Madres Domínicas" />
 
             <RadioButton
-                android:id="@+id/radioMarco"
+                android:id="@+id/radioLiceo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Liceo Humanidades" />
 
             <RadioButton
-                android:id="@+id/radioKryzpo"
+                android:id="@+id/radioAdventista"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Colegio Adventista" />
